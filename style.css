@@ -13,3 +13,11 @@ body{
     font-size: 20px;
 }
 
+/* Estilos CSS para el div */
+.contenedor {
+    width: 80%; /* Ancho del div */
+    margin: 0 auto; /* Centrar el div horizontalmente */
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde */
+}

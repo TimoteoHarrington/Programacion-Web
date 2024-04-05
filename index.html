@@ -1,50 +1,84 @@
 <!DOCTYPE html> <!-- Indicador para el navegador que vamos a usar html version 5-->
-<html lang="en"> <!-- "es-AR" para español -->
+<html lang="es"> <!-- "es-AR" para español -->
 <head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Harrington y La Fuente</title> 
+    <link rel="icon" href="imagenes/hyl.png" type="image/png">
     <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8"> <!--  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- "viewport" se refiere a cualquier pantalla del mundo -->
-    <title>Mi pagina oaaa</title> <!-- Esta es una etiqueta, '<nombre>contenido</nombre>' -->
+    <link rel="stylesheet" href="style_desk.css">
 </head> 
 <body>
-    <br>
-    <br>
-    <marquee>Hola</marquee>
-    <br>
-    <br>
-    <div class="contenedor">
-        <h1>Este es un ejemplo de un div</h1>
-        <p>Un div es un elemento HTML utilizado para dividir o agrupar contenido en una página web.</p>
-        <p>Se puede aplicar estilos o manipular con JavaScript para modificar su apariencia o comportamiento.</p>
-    </div>
+   <header class="header"> 
+        <input type="checkbox" class="header_checkbox" id="open-menu">
+        <label for="open-menu" class="header_open-nav-button" role="button">=</label> 
+        <div class="header_logo-container">
+            <img class="header_logo" src="imagenes/hyl.png">
+        </div> 
+        <nav class="header_nav" >
+            <ul class= "header_nav-list"> 
+                <li class="header_nav-item" ><a  href="#inicio">Inicio</a></li>
+                <li class="header_nav-item" ><a href="#servicios">Servicios</a></li>
+                <li class="header_nav-item" ><a href="#historia">Historia</a></li>
+                <li class="header_nav-item" ><a  href="#form">Contacto</a></li>
+            </ul>
+        </nav>
+   </header> 
+   
+<!-- Sección de Inicio -->
+    <section id="inicio" class="inicio">
+        <h1>Harrington & La Fuente S.A.</h1>
+        <p>Más de medio siglo de excelencia en negocios ganaderos.</p>
 
-    <h1>Titulo del texto</h1>
-    <h2>Subtitulo</h2> <!-- existe hasta h6 -->
-    <p>Esto es un parrafo</p>
-    <!-- place holder -->
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis natus maxime tempore omnis sunt est sapiente. Officia ipsa sed accusamus nobis temporibus? Sequi nostrum possimus maxime corporis veniam porro eos.
-    Consectetur doloribus amet dicta eveniet maxime repudiandae atque consequatur, sequi recusandae, molestiae cupiditate est accusamus, totam inventore ab eum nobis sit laboriosam? Maiores nostrum veniam praesentium, nihil assumenda numquam iste.
-    <br> </br>Voluptate consequatur beatae, saepe delectus maxime perspiciatis natus eum, est exercitationem vero et officiis nisi. Accusamus facilis adipisci repudiandae nihil quos soluta officiis debitis magnam quod consequatur. Iure, adipisci ex.
-    Mollitia commodi assumenda, maxime doloribus at, blanditiis suscipit harum cupiditate accusamus quo vitae optio quidem omnis iusto totam quis iste quaerat repudiandae. Ipsam doloribus laboriosam dolorum minus perferendis quas maiores.
-    Laboriosam neque dignissimos, vero est sint eaque. Sapiente dolore magnam molestiae harum soluta quam nulla aspernatur iste modi ratione, pariatur libero nisi molestias repudiandae quo vitae, in ut, consequuntur totam?
-    <br>
-    <img src="./imagenes/image.jpeg" alt=""></p>
-    <a href="http://google.com">Ir a Google</target= a>
-    <a href="contacto.html">Ir a contacto</a>
+    </section>
+    <!-- Sección de Actividades -->
+    <section id="servicios" class="actividades">
+        <h2>Servicios</h2> 
+        <div class="actividad">COMERCIALIZACIÓN DE HACIENDA VACUNA, CON DESTINO A FAENA, EN EL MERCADO DE LINIERS</div>
+        <div class="actividad">VENTAS DIRECTAS PARA CONSUMO Y EXPORTACIÓN</div>
+        <div class="actividad">NEGOCIOS DE INVERNADA, CRÍA Y REPRODUCTORES EN FORMA PARTICULAR, REMATES Y FERIAS</div>
+        <div class="actividad">COMPRA Y VENTA DE CAMPOS</div>
+    </section>
 
-    <ol type="I" start="1" >
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>   </ol>
+    <!-- Sección de Historia -->
+    <section id="historia" class="historia">
+        <h2>Historia</h2>
+        <p>Harrington y Lafuente S.A. es una firma consignataria de ganado que opera en el mercado desde el año 1967. Fundada por Juan B. Harrington y Primitivo M. Lafuente. Carlos R. Bledel se incorpora a la casa en el año 1973 y como socio en 1989. Dedicada principalmente a la comercialización de hacienda vacuna con destino a faena en el Mercado de Liniers, ventas directas para consumo y exportación e invernada, cría y reproductores en forma particular y en remates y ferias en distintas zonas ganaderas.
+            <br>
+            La vasta experiencia y trayectoria en la actividad relacionada con los negocios agropecuarios ha colocado a la empresa entre las líderes del mercado, basándose en la tradición agropecuaria, la constante generación de nuevos servicios y conocimientos imprescindibles para afrontar los desafíos que implican los cambios en la economía global, la solvencia patrimonial y la conducta mantenida a través de toda su historia.
+            <br>
+            Contamos con una importante cartera de clientes con quienes se mantienen estrechas relaciones, informándoles sobre la marcha de la actividad y sobre las distintas posibilidades de inversión en el sector.</p>
+        <!-- Añade más contenido sobre tu historia aquí -->
+    </section>
 
-    <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>   </ul>
-    <marquee>Chau</marquee>
+    <div class="formulario-contacto" id="form">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+          <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="campo">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="campo">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          </div>
+          <div class="boton">
+            <button type="submit">Enviar Mensaje</button>
+          </div>
+        </form>
+      </div> 
+
+    <footer>
+        <p>©Harrington & Lafuente. Consignataria de Hacienda</p>
+    </footer>
+
 </body>
 </html>

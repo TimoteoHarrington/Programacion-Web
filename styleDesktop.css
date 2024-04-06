@@ -4,16 +4,40 @@
         font-size: 19px;
         padding-right: 25px;
     }
+    header .logo{
+        margin: 0 ;
+        padding: 0;
+        width: 60px; 
+        height: 60px;
+    } 
+    #quienes-somos .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #quienes-somos .image-container{
+        background-image: url(imagenes/logo-2.png);
+        background-size: cover;
+        height: 400px; 
+        width: 400px; 
+        justify-self: center; /* Centra horizontalmente */
+        align-self: center; /* Centra verticalmente */
     
+    }
+    #quienes-somos .texto{
+        text-align: initial;
+        justify-content: center;
+    }
+    /*   ESTO ES CON FLEXBOX, LO DEJO COMO EJEMPLO
     #quienes-somos .container{
         display: flex;
         justify-content: space-evenly;
+        width: 100%;
 
     }
 
     #quienes-somos .texto{
         text-align: initial;
-        width: 70%;
+        width: 60%;
         padding: 0px 30px;
         max-width: 600px;
         display: flex;
@@ -27,6 +51,7 @@
         background-image: url(imagenes/logo-2.png);
         background-size: cover;
         background-position: center center;
+        width: 40%;
         background-repeat: no-repeat;  
         height: 400px; 
         width: 400px;
@@ -34,33 +59,38 @@
        
     } 
     
-    #nuestros-servicios .target{
+/*    #nuestros-servicios .target{
         display: flex;
         justify-content: center;
-    }
-
-    #nuestros-servicios p{
-        display: block;
     }
 
     #nuestros-servicios h3{
         margin-top: 5px;
     }
-
+*/
     #nuestros-servicios .carta{
         padding:15px ;
         border: none;
-    }
+    }  
     #nuestros-servicios .container{
-        text-align: center;
         background-image: linear-gradient(
             0deg,
             rgb(0,0,0,0.7),
             rgb(0,0,0,0.7))
             ,url(imagenes/novi.jpeg); 
-        background-repeat: no-repeat ;
-        background-size: cover; 
-        color: #FFE8D1;
-        padding: 110px 10px;
+    }  
+    #nuestros-servicios .container{
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+    } 
+
+    #nuestros-servicios .target{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    } 
+    #nuestros-servicios p{
+        display: block;
     }
+
 }

@@ -20,6 +20,7 @@ button{
     border-radius: 8px;
     color: #FFE8D1;
     background-color: #941B0C;
+    cursor: pointer;
 } 
 
 button:hover{
@@ -38,10 +39,10 @@ header .container{
     align-items: center;
     justify-content: space-between;
     background-color:#1E1E24 ; 
-    padding: 15px 20px;
+    padding: 3px 20px;
 }
 header .logo{
-    margin: 0 ;
+    margin: 0;
     padding: 0;
     width: 40px; 
     height: 40px;
@@ -54,14 +55,26 @@ header nav{
 } 
 
 header a{ 
-    padding: 0px 12px;
+    padding: 0px 24px;
     text-decoration: none;
     font-weight: bold; 
     text-align: center;
     color: #FFE8D1;
-    font-size: 13px; 
+    font-size: 8px; 
+    font-family: sans-serif;
      
 } 
+
+header .boton_header{
+    font-size: 15px; 
+    font-family: sans-serif;
+    margin-right: 10px;
+
+}
+
+.boton_header:hover{
+    color: #FFE8D1
+}
 
 header :hover{
     color:#941B0C
@@ -79,7 +92,7 @@ header :hover{
         0deg,
         rgb(0,0,0,0.5),
         rgb(0,0,0,0.5))
-        ,url(imagenes/campo.jpeg); 
+        ,url(/imagenes/campo.jpeg); 
     background-repeat: no-repeat ;
     background-size: cover;
 } 
@@ -102,9 +115,9 @@ header :hover{
     text-align: center;
     background-image: linear-gradient(
         0deg,
-        rgb(0,0,0,0.5),
-        rgb(0,0,0,0.5))
-        ,url(imagenes/novi.jpeg); 
+        rgb(0,0,0,0.7),
+        rgb(0,0,0,0.7))
+        ,url(/imagenes/novi.jpeg); 
     background-repeat: no-repeat ;
     background-size: cover; 
     color: #FFE8D1;

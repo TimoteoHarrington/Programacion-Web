@@ -15,7 +15,7 @@
         grid-template-columns: 1fr 1fr;
     }
     #quienes-somos .image-container{
-        background-image: url(imagenes/logo-2.png);
+        background-image: url(/imagenes/logo-2.png);
         background-size: cover;
         height: 400px; 
         width: 400px; 
@@ -26,6 +26,7 @@
     #quienes-somos .texto{
         text-align: initial;
         justify-content: center;
+        margin-left:30px ;
     }
     /*   ESTO ES CON FLEXBOX, LO DEJO COMO EJEMPLO
     #quienes-somos .container{
@@ -72,13 +73,7 @@
         padding:15px ;
         border: none;
     }  
-    #nuestros-servicios .container{
-        background-image: linear-gradient(
-            0deg,
-            rgb(0,0,0,0.7),
-            rgb(0,0,0,0.7))
-            ,url(imagenes/novi.jpeg); 
-    }  
+    
     #nuestros-servicios .container{
         display: grid;
         grid-template-rows: 1fr 4fr;
@@ -89,6 +84,10 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         
     } 
+
+    #nuestros-servicios h3{
+        margin: 0;
+    }
     #nuestros-servicios p{
         display: block;
     }

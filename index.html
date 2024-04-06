@@ -1,84 +1,81 @@
-<!DOCTYPE html> <!-- Indicador para el navegador que vamos a usar html version 5-->
-<html lang="es"> <!-- "es-AR" para español -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Harrington y La Fuente</title> 
-    <link rel="icon" href="imagenes/hyl.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harrington & La Fuente</title> 
+    <link rel="icon" href="imagenes/logo-1-64px.png" type="image/png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style_desk.css">
-</head> 
+    <link rel="stylesheet" href="styleDesktop.css">
+</head>
 <body>
-   <header class="header"> 
-        <input type="checkbox" class="header_checkbox" id="open-menu">
-        <label for="open-menu" class="header_open-nav-button" role="button">=</label> 
-        <div class="header_logo-container">
-            <img class="header_logo" src="imagenes/hyl.png">
-        </div> 
-        <nav class="header_nav" >
-            <ul class= "header_nav-list"> 
-                <li class="header_nav-item" ><a  href="#inicio">Inicio</a></li>
-                <li class="header_nav-item" ><a href="#servicios">Servicios</a></li>
-                <li class="header_nav-item" ><a href="#historia">Historia</a></li>
-                <li class="header_nav-item" ><a  href="#form">Contacto</a></li>
-            </ul>
-        </nav>
-   </header> 
-   
-<!-- Sección de Inicio -->
-    <section id="inicio" class="inicio">
-        <h1>Harrington & La Fuente S.A.</h1>
-        <p>Más de medio siglo de excelencia en negocios ganaderos.</p>
+    <header> 
+        <div class="container"> 
+            <a href="#hero"><img class="logo" src="imagenes/logo.svg" ></img></a>
+            <nav> 
+                <a href="#quienes-somos">Sobre nosotros</a> 
+                <a href="#nuestros-servicios">Servicios</a>
+                <a href="#quienes-somos">Historia</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+    </header> 
 
-    </section>
-    <!-- Sección de Actividades -->
-    <section id="servicios" class="actividades">
-        <h2>Servicios</h2> 
-        <div class="actividad">COMERCIALIZACIÓN DE HACIENDA VACUNA, CON DESTINO A FAENA, EN EL MERCADO DE LINIERS</div>
-        <div class="actividad">VENTAS DIRECTAS PARA CONSUMO Y EXPORTACIÓN</div>
-        <div class="actividad">NEGOCIOS DE INVERNADA, CRÍA Y REPRODUCTORES EN FORMA PARTICULAR, REMATES Y FERIAS</div>
-        <div class="actividad">COMPRA Y VENTA DE CAMPOS</div>
-    </section>
+    <section id="hero"> 
+        <h1>Harrington & La Fuente S.A. <br>Consignataria de Hacienda</h1>
+        <button>CONTACTO</button>
+    </section> 
 
-    <!-- Sección de Historia -->
-    <section id="historia" class="historia">
-        <h2>Historia</h2>
-        <p>Harrington y Lafuente S.A. es una firma consignataria de ganado que opera en el mercado desde el año 1967. Fundada por Juan B. Harrington y Primitivo M. Lafuente. Carlos R. Bledel se incorpora a la casa en el año 1973 y como socio en 1989. Dedicada principalmente a la comercialización de hacienda vacuna con destino a faena en el Mercado de Liniers, ventas directas para consumo y exportación e invernada, cría y reproductores en forma particular y en remates y ferias en distintas zonas ganaderas.
-            <br>
-            La vasta experiencia y trayectoria en la actividad relacionada con los negocios agropecuarios ha colocado a la empresa entre las líderes del mercado, basándose en la tradición agropecuaria, la constante generación de nuevos servicios y conocimientos imprescindibles para afrontar los desafíos que implican los cambios en la economía global, la solvencia patrimonial y la conducta mantenida a través de toda su historia.
-            <br>
-            Contamos con una importante cartera de clientes con quienes se mantienen estrechas relaciones, informándoles sobre la marcha de la actividad y sobre las distintas posibilidades de inversión en el sector.</p>
-        <!-- Añade más contenido sobre tu historia aquí -->
-    </section>
+    <section id="quienes-somos">
+        <div class="container"> 
+                
+            <div class="texto">
+                <h2>Quienes somos</h2> 
+                <p>Harrington y Lafuente S.A. es una firma consignataria de ganado que opera en el mercado desde el año 1967. Fundada por Juan B. Harrington y Primitivo M. Lafuente. Carlos R. Bledel se incorpora a la casa en el año 1973 y como socio en 1989. <br>Dedicada principalmente a la comercialización de hacienda vacuna con destino a faena en el Mercado de Liniers, ventas directas para consumo y exportación e invernada, cría y reproductores en forma particular y en remates y ferias en distintas zonas ganaderas.
+                    <br>
 
-    <div class="formulario-contacto" id="form">
-        <h2>Contacto</h2>
-        <form action="#" method="post">
-          <div class="campo">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-          </div>
-          <div class="campo">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="campo">
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono">
-          </div>
-          <div class="campo">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-          </div>
-          <div class="boton">
-            <button type="submit">Enviar Mensaje</button>
-          </div>
-        </form>
-      </div> 
+                    La vasta experiencia y trayectoria en la actividad relacionada con los negocios agropecuarios ha colocado a la empresa entre las líderes del mercado, basándose en la tradición agropecuaria, la constante generación de nuevos servicios y conocimientos imprescindibles para afrontar los desafíos que implican los cambios en la economía global, la solvencia patrimonial y la conducta mantenida a través de toda su historia.
+                    
+                    </p>
+            </div>
+            <div class="image-container"></div>
+        </div>
+    
+    </section> 
+
+    <seccion id="nuestros-servicios">
+        <div class="container">
+        
+            <h2>Nuestros Servicios</h2>
+            <div class="target" >
+                <div class="carta">
+                    <h3>COMERCIALIZACIÓN DE HACIENDA VACUNA, CON DESTINO A FAENA, EN EL MERCADO DE LINIERS</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit velit esse voluptatem debitis est vero vitae consectetur quaerat? Alias aspernatur quia delectus enim earum pariatur aut impedit. Amet, aspernatur.</p>
+                    <button>+Info</button>
+                </div>
+                <div class="carta">
+                    <h3>VENTAS DIRECTAS PARA CONSUMO Y EXPORTACIÓN</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolorum praesentium maxime rerum quaerat voluptatibus fugiat. Delectus sint, sed quam numquam harum autem pariatur. Facilis qui at ea nostrum labore.</p>
+                    <button>+Info</button>
+                </div>
+                <div class="carta">
+                    <h3>NEGOCIOS DE INVERNADA, CRÍA Y REPRODUCTORES EN FORMA PARTICULAR, REMATES Y FERIAS</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti corporis ratione, minima eum provident placeat culpa, porro asperiores necessitatibus aspernatur omnis possimus recusandae? Odit sed exercitationem quaerat ratione fugit fuga!</p>
+                    <button>+Info</button>
+                </div>
+                <div class="carta">
+                    <h3>COMPRA Y VENTA DE CAMPOS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cumque repudiandae atque temporibus quas beatae debitis aliquid sint facere doloribus minima, quis inventore, ullam nulla omnis incidunt consectetur repellendus repellat?</p>
+                    <button>+Info</button>
+                </div>
+            </div>
+        </div>
+    </seccion> 
 
     <footer>
-        <p>©Harrington & Lafuente. Consignataria de Hacienda</p>
+        <div class="container">
+            <p>©Harrington & Lafuente. Consignataria de Hacienda</p>
+        </div>
     </footer>
-
 </body>
 </html>

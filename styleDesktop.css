@@ -1,0 +1,66 @@
+@media (min-width:720px){ 
+    
+    header a{
+        font-size: 19px;
+        padding-right: 25px;
+    }
+    
+    #quienes-somos .container{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    #quienes-somos .texto{
+        text-align: initial;
+        width: 70%;
+        padding: 0px 30px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 70px;
+        
+    } 
+    
+    #quienes-somos .image-container{
+        background-image: url(imagenes/logo-2.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;  
+        height: 400px; 
+        width: 400px;
+        margin: auto;
+       
+    } 
+    
+    #nuestros-servicios .target{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-servicios p{
+        display: block;
+    }
+
+    #nuestros-servicios h3{
+        margin-top: 5px;
+    }
+
+    #nuestros-servicios .carta{
+        padding:15px ;
+        border: none;
+    }
+    #nuestros-servicios .container{
+        text-align: center;
+        background-image: linear-gradient(
+            0deg,
+            rgb(0,0,0,0.7),
+            rgb(0,0,0,0.7))
+            ,url(imagenes/novi.jpeg); 
+        background-repeat: no-repeat ;
+        background-size: cover; 
+        color: #FFE8D1;
+        padding: 110px 10px;
+    }
+}

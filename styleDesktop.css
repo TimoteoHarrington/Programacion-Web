@@ -15,7 +15,7 @@
         grid-template-columns: 1fr 1fr;
     }
     #quienes-somos .image-container{
-        background-image: url(/imagenes/logo-2.png);
+        background-image: url(imagenes/logo-2.png);
         background-size: cover;
         height: 400px; 
         width: 400px; 

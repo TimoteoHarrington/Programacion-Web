@@ -92,7 +92,7 @@ header :hover{
         0deg,
         rgb(0,0,0,0.5),
         rgb(0,0,0,0.5))
-        ,url(/imagenes/campo.jpeg); 
+        ,url(imagenes/campo.jpeg); 
     background-repeat: no-repeat ;
     background-size: cover;
 } 
@@ -117,7 +117,7 @@ header :hover{
         0deg,
         rgb(0,0,0,0.7),
         rgb(0,0,0,0.7))
-        ,url(/imagenes/novi.jpeg); 
+        ,url(imagenes/novi.jpeg); 
     background-repeat: no-repeat ;
     background-size: cover; 
     color: #FFE8D1;

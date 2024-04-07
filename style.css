@@ -27,48 +27,49 @@ button:hover{
     background-color:rgb(106, 26, 26);
 } 
 
-
 header { 
-    background-color: rgb(245, 245, 245);
-    width: 100%;
     position: fixed;
+    background-color:#1E1E24; 
+    display: flex;
+    width: 100%;
 } 
 
 header .container{ 
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color:#1E1E24 ; 
-    padding: 3px 20px;
-}
-header .logo{
-    margin: 0;
-    padding: 0;
-    width: 40px; 
-    height: 40px;
-} 
+    justify-content: center;
+    width: 20%;
+    padding: 5px;
 
+}
+
+header .logo{
+    height: 40px;
+    width: 40px;
+} 
 
 header nav{
     display: flex;
-    align-items: center;
+    align-items:center;
+    justify-content: right;
+    width: 80%;
+
 } 
 
 header a{ 
-    padding: 0px 24px;
+    padding: 0px 8px;
     text-decoration: none;
     font-weight: bold; 
     text-align: center;
     color: #FFE8D1;
-    font-size: 8px; 
+    font-size: 11px; 
     font-family: sans-serif;
      
 } 
 
 header .boton_header{
-    font-size: 15px; 
+    font-size: 13px; 
     font-family: sans-serif;
-    margin-right: 10px;
+    margin-right: auto;
 
 }
 
@@ -139,6 +140,7 @@ header :hover{
     margin: 10px;
     padding: 5px;
     border-radius: 5px;
+    font-size: 12px;
 } 
 
 footer {

@@ -26,8 +26,8 @@
         background-size: cover;
         height: 400px; 
         width: 400px; 
-        justify-self: center; /* Centra horizontalmente */
-        align-self: center; /* Centra verticalmente */
+        justify-self: center; 
+        align-self: center; 
     
     }
     #quienes-somos .texto{
@@ -35,47 +35,7 @@
         justify-content: center;
         margin-left:30px ;
     }
-    /*   ESTO ES CON FLEXBOX, LO DEJO COMO EJEMPLO
-    #quienes-somos .container{
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
 
-    }
-
-    #quienes-somos .texto{
-        text-align: initial;
-        width: 60%;
-        padding: 0px 30px;
-        max-width: 600px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 70px;
-        
-    } 
-    
-    #quienes-somos .image-container{
-        background-image: url(imagenes/logo-2.png);
-        background-size: cover;
-        background-position: center center;
-        width: 40%;
-        background-repeat: no-repeat;  
-        height: 400px; 
-        width: 400px;
-        margin: auto;
-       
-    } 
-    
-/*    #nuestros-servicios .target{
-        display: flex;
-        justify-content: center;
-    }
-
-    #nuestros-servicios h3{
-        margin-top: 5px;
-    }
-*/
     #nuestros-servicios .carta{
         padding:15px ;
         border: none;

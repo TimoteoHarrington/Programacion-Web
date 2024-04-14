@@ -21,7 +21,36 @@
             <a href="contacto.html"><button class="boton_header">Contacto</button></a>
         </nav>
         
-    </header> 
-    <div class="title"> <h1>Pagina de contacto</h1></div>
+    </header>  
+
+
+
+    <div Class="contacto">
+        <form class="form" method="post" id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form> 
+        <div class="info">
+            <h4><a href="https://www.instagram.com/harringtonylafuente/"><img src="imagenes/ig.png" alt="ig">@harrington&lafuente</h4></a>
+            <h4><img src="imagenes/mail.png" alt="ig">harrington&lafuente@gmail.com</h4>
+            <h4><img src="imagenes/celular.png" alt="ig">+54 9 1112345678</h4>
+            <h4><img src="imagenes/oficina.png" alt="ig" >Oficina central: Av. Cordoba 1234</h4>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>©Harrington & Lafuente. Consignataria de Hacienda</p>
+        </div>
+   
+    </footer>
 </body>
 </html>

@@ -7,6 +7,7 @@ h1{font-size: 3.5em;}
 h2{font-size: 2.7em;}
 h3{font-size: 2em;}
 p{font-size: 1.25em;}
+
 body{
     font-family: 'Montserrat';
     margin: 0; 
@@ -144,15 +145,18 @@ header :hover{
 } 
 
 footer {
+    position: relative;
     color: #FFFFFF;
     background-color: #60606d;
     padding: auto;
     margin: 0;
     height: auto;
+
 }
 
 footer p{
-   margin: 0;
+   
+   margin-top: auto;
    font-size: 15px;
 }
 

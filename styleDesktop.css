@@ -1,4 +1,4 @@
-@media (min-width:700px){ 
+@media (min-width:900px){ 
     
     header a{
         font-size: 19px;
@@ -37,7 +37,9 @@
     }
 
     #nuestros-servicios .carta{
-        padding:15px ;
+        padding:50px ;
+        padding-left: 80px;
+        padding-right: 80px;
         border: none;
     }  
     
@@ -48,15 +50,23 @@
 
     #nuestros-servicios .target{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         
     } 
 
     #nuestros-servicios h3{
         margin: 0;
+        font-size: 26px;
     }
     #nuestros-servicios p{
         display: block;
+        font-size: 20px;
+    } 
+
+    #nuestros-servicios .carta button {
+        display: none;
     }
+    
+    
 
 }

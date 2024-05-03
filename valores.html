@@ -26,7 +26,7 @@
 
 
     <div class="selector">
-        <select id="table-selector" onchange="showTable()">
+        <select id="table-selector" onchange="showSelected()">
             <option value="table1">FAENA</option>
             <option value="table2">INVERNADA</option>
             <option value="table3">GRANOS</option>
@@ -39,51 +39,65 @@
         <table id="table1">
           <thead>
             <tr>
-              <th>FAENA</th>
-              <th>Price ($/kg + IVA)</th>
-              <th>Quantity</th>
+              <th>CATEGORIAS</th>
+              <th colspan="2">entre</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Novillitos until 390 Kg.</td>
-              <td>2153</td>
-              <td>836</td>
+              <td>Novillitos (290kg - 340kg)</td>
+              <td> $1.900,00</td>
+              <td> $2.100,00</td>
             </tr>
             <tr>
-              <td>Novillitos 391-430 Kg.</td>
-              <td>2034</td>
-              <td>841</td>
+              <td>Novillo liviano (340kg - 390kg)</td>
+              <td> $1.850,00</td>
+              <td> $2.000,00</td>
             </tr>
             <tr>
-              <td>Novillos 431-460 Kg.</td>
-              <td>1943</td>
-              <td>296</td>
+              <td>Novillo Mediano (390kg - 450kg)</td>
+              <td> $1.800,00</td>
+              <td> $1.950,00</td>
             </tr>
             <tr>
-              <td>Novillos 461-490 Kg.</td>
-              <td>1936</td>
-              <td>279</td>
+              <td>Novillo pesado (+ 450kg)</td>
+              <td> $1.800,00</td>
+              <td> $1.930,00</td>
             </tr>
             <tr>
-              <td>Vaquillonas until 390 Kg.</td>
-              <td>2097</td>
-              <td>-</td>
+              <td>Vaquillona liviana (280kg - 310kg)</td>
+              <td> $1.900,00</td>
+              <td> $2.100,00</td>
             </tr>
             <tr>
-              <td>Vacas Buenas</td>
-              <td>1464</td>
-              <td>2642</td>
+              <td>Vaquillona mediana (310kg - 360kg)</td>
+              <td> $1.850,00</td>
+              <td> $2.000,00</td>
             </tr>
             <tr>
-              <td>Vacas Regulares</td>
-              <td>1170</td>
-              <td>2753</td>
+              <td>Vaquillona pesada (360kg - 430kg)</td>
+              <td> $1.700,00</td>
+              <td> $1.900,00</td>
             </tr>
             <tr>
-              <td>Vacas Conserva</td>
-              <td>969</td>
-              <td>1103</td>
+              <td>Vaca consumo</td>
+              <td> $1.300,00</td>
+              <td> $1.450,00</td>
+            </tr> 
+            <tr>
+                <td>Vaca carniceria</td>
+                <td> $1.000,00</td>
+                <td> $1.300,00</td>
+            </tr> 
+            <tr>
+                <td>Vaca conserva/manufactura</td>
+                <td> $700,00</td>
+                <td> $1.000,00</td>
+            </tr> 
+            <tr>
+                <td>Toros buenos</td>
+                <td> $1.200,00</td>
+                <td> $1.400,00</td>
             </tr>
           </tbody>
           <tfoot>
@@ -96,52 +110,86 @@
         <table id="table2" style="display: none;">
             <thead>
                 <tr>
-                  <th>INVERNADA</th>
-                  <th>Price ($/kg + IVA)</th>
-                  <th>Quantity</th>
+                  <th>CATEGORIAS</th>
+                  <th colspan="2">entre</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Novillitos until 390 Kg.</td>
-                  <td>2153</td>
-                  <td>836</td>
+                  <td>Terneros hasta 160kg</td>
+                  <td> - </td>
+                  <td> $2.300,00</td>
                 </tr>
                 <tr>
-                  <td>Novillitos 391-430 Kg.</td>
-                  <td>2034</td>
-                  <td>841</td>
+                  <td>Terneros (160kg - 180kg)</td>
+                  <td> $2.100,00 </td>
+                  <td> $2.200,00</td>
                 </tr>
                 <tr>
-                  <td>Novillos 431-460 Kg.</td>
-                  <td>1943</td>
-                  <td>296</td>
+                  <td>Terneros (190kg - 200kg)</td>
+                  <td> $2.100,00 </td>
+                  <td> $2.200,00</td>
                 </tr>
                 <tr>
-                  <td>Novillos 461-490 Kg.</td>
-                  <td>1936</td>
-                  <td>279</td>
+                  <td>Terneros (210 kg - 220kg)</td>
+                  <td> $1.900,00</td>
+                  <td> $2.000,00</td>
                 </tr>
                 <tr>
-                  <td>Vaquillonas until 390 Kg.</td>
-                  <td>2097</td>
-                  <td>-</td>
+                  <td>Novillitos (230kg - 270kg)</td>
+                  <td> $1.800,00</td>
+                  <td> $1.900,00</td>
                 </tr>
                 <tr>
-                  <td>Vacas Buenas</td>
-                  <td>1464</td>
-                  <td>2642</td>
+                  <td>Novillitos (270kg - 330kg)</td>
+                  <td> $1.700,00</td>
+                  <td> $1.800,00</td>
                 </tr>
                 <tr>
-                  <td>Vacas Regulares</td>
-                  <td>1170</td>
-                  <td>2753</td>
+                  <td>Terneras (150kg - 160kg)</td>
+                  <td> $1.800,00</td>
+                  <td> $1.900,00</td>
                 </tr>
                 <tr>
-                  <td>Vacas Conserva</td>
-                  <td>969</td>
-                  <td>1103</td>
-                </tr>
+                    <td>Terneras (170kg - 200kg)</td>
+                    <td> $1.700,00</td>
+                    <td> $1.800,00</td>
+                  </tr>
+                  <tr>
+                    <td>Terneras (200kg - 230kg)</td>
+                    <td> $1.650,00</td>
+                    <td> $1.700,00</td>
+                  </tr>
+                <tr>
+                    <td>Vaquillonas (230kg - 270kg)</td>
+                    <td> $1.500,00</td>
+                    <td> $1.600,00</td>
+                </tr> 
+                <tr>
+                    <td>Vaquillonas (270kg - 330kg)</td>
+                    <td> $1.400,00</td>
+                    <td> $1.500,00</td>
+                </tr> 
+                <tr>
+                    <td>Vaca de invernada</td>
+                    <td> $900,00</td>
+                    <td> $1.000,00</td>
+                </tr> 
+                <tr>
+                    <td>Vaca nueva preñada</td>
+                    <td> $600.000,00</td>
+                    <td> $750.000,00</td>
+                </tr> 
+                <tr>
+                    <td>Vaca usada preñada</td>
+                    <td> $500.000,00</td>
+                    <td> $570.000,00</td>
+                </tr> 
+                <tr>
+                    <td>Vaquillona preñada</td>
+                    <td> $600.000,00</td>
+                    <td> $750.000,00</td>
+                </tr> 
               </tbody>
               <tfoot>
                 <tr>
@@ -151,132 +199,77 @@
              
         </table>
         
-        <table id="table3" style="display: none;">
+        <table id="table3" style="display: none;" style="width: 100%;">
             <thead>
                 <tr>
-                  <th>GRANOS</th>
-                  <th>Price ($/kg + IVA)</th>
-                  <th>Quantity</th>
+                  <th style="width: 55%;">GRANOS</th>
+                  <th style="width: 15%;">NY</th>
+                  <th style="width: 15%;">ROSARIO</th>
+                  <th style="width: 15%;" >QUEQUEN</th>
+
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Novillitos until 390 Kg.</td>
+                  <td>Maiz</td>
                   <td>2153</td>
+                  <td>836</td>
                   <td>836</td>
                 </tr>
                 <tr>
-                  <td>Novillitos 391-430 Kg.</td>
-                  <td>2034</td>
-                  <td>841</td>
+                    <td>Girasol</td>
+                    <td>2153</td>
+                    <td>836</td>
+                    <td>836</td>
                 </tr>
                 <tr>
-                  <td>Novillos 431-460 Kg.</td>
-                  <td>1943</td>
-                  <td>296</td>
+                    <td>Trigo</td>
+                    <td>2153</td>
+                    <td>836</td>
+                    <td>836</td>
                 </tr>
                 <tr>
-                  <td>Novillos 461-490 Kg.</td>
-                  <td>1936</td>
-                  <td>279</td>
+                    <td>Cebada</td>
+                    <td>2153</td>
+                    <td>836</td>
+                    <td>836</td>
                 </tr>
                 <tr>
-                  <td>Vaquillonas until 390 Kg.</td>
-                  <td>2097</td>
-                  <td>-</td>
+                    <td>Soja</td>
+                    <td>2153</td>
+                    <td>836</td>
+                    <td>836</td>
                 </tr>
                 <tr>
-                  <td>Vacas Buenas</td>
-                  <td>1464</td>
-                  <td>2642</td>
-                </tr>
-                <tr>
-                  <td>Vacas Regulares</td>
-                  <td>1170</td>
-                  <td>2753</td>
-                </tr>
-                <tr>
-                  <td>Vacas Conserva</td>
-                  <td>969</td>
-                  <td>1103</td>
+                    <td>Sorgo</td>
+                    <td>2153</td>
+                    <td>836</td>
+                    <td>836</td>
                 </tr>
               </tbody>
               <tfoot>
                 <tr>
-                    <td colspan="3">Fuente: Bolsa de comercio</td>
+                    <td colspan="4">Fuente: Buenas fuentes :/</td>
                 </tr>
                 </tfoot>
               
         </table>
         
-        <table id="table4" style="display: none;">
-            <thead>
-                <tr>
-                  <th>DOLAR</th>
-                  <th>Price ($/kg + IVA)</th>
-                  <th>Quantity</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Novillitos until 390 Kg.</td>
-                  <td>2153</td>
-                  <td>836</td>
-                </tr>
-                <tr>
-                  <td>Novillitos 391-430 Kg.</td>
-                  <td>2034</td>
-                  <td>841</td>
-                </tr>
-                <tr>
-                  <td>Novillos 431-460 Kg.</td>
-                  <td>1943</td>
-                  <td>296</td>
-                </tr>
-                <tr>
-                  <td>Novillos 461-490 Kg.</td>
-                  <td>1936</td>
-                  <td>279</td>
-                </tr>
-                <tr>
-                  <td>Vaquillonas until 390 Kg.</td>
-                  <td>2097</td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td>Vacas Buenas</td>
-                  <td>1464</td>
-                  <td>2642</td>
-                </tr>
-                <tr>
-                  <td>Vacas Regulares</td>
-                  <td>1170</td>
-                  <td>2753</td>
-                </tr>
-                <tr>
-                  <td>Vacas Conserva</td>
-                  <td>969</td>
-                  <td>1103</td>
-                </tr>
-              </tbody> 
-              <tfoot>
-                <tr>
-                    <td colspan="3">Fuente: https://dolarapi.com </td>
-                </tr>
-                </tfoot>
+        <div class="dolar-container" id="table4" style="display: none;"> 
+            <div class="dolarContainer">
+                <div class="dolaritem"><iframe style="width:320px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/dolar-blue" frameborder="0"></iframe></div>
+                <div class="dolaritem"><iframe style="width:320px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/dolar-bancos-y-casas-de-cambio" frameborder="0"></iframe></div>
+                <div class="dolaritem"><iframe style="width:320px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/dolar-mep" frameborder="0"></iframe></div>
+                <div class="dolaritem"><iframe style="width:320px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/dolar-contado-con-liquidacion" frameborder="0"></iframe></div>
+                <div class="dolaritem"><iframe style="width:320px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/bitcoin-usd" frameborder="0"></iframe></div>
+                <div class="dolaritem" id="ultimo"><iframe style="width:320px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc" src="https://dolarhoy.com/i/cotizaciones/banco-nacion" frameborder="0"></iframe></div>
+            </div>
                 
-        </table> 
+        </div> 
        
 
       </div>
 
-
-
-      
-
-
-
-    
 
 
       <footer>

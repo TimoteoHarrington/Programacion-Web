@@ -51,49 +51,22 @@ function iniciarMap(){
 
 /****************** Seleccionar tabla en Valores */
 
-const tableSelector = document.getElementById("table-selector");
-const tableContainer = document.getElementById("table-container");
-
-tableSelector.addEventListener("change", () => {
-  const selectedTable = tableSelector.value;
-
-  // Hide all tables
-  for (let i = 1; i <= 3; i++) {
-    const tableId = `table${i}`;
-    const table = document.getElementById(tableId);
-    table.style.display = "none";
-  }
-
-  // Show the selected table
-  const selectedTableId = `table${selectedTable}`;
-  const selectedTableElement = document.getElementById(selectedTableId);
-  selectedTableElement.style })
-
-
-  const dropdownButton = document.getElementById('dropdown-button');
-  const dropdown = document.querySelector('.dropdown');
-  
-  dropdownButton.addEventListener('click', () => {
-    dropdown.classList.toggle('show');
-  });
-  
-  document.addEventListener('click', (e) => {
-    if (!dropdown.contains(e.target) &&!dropdownButton.contains(e.target)) {
-      dropdown.classList.remove('show');
-    }
-  });
-
-
-  function showTable() {
+function showSelected() {
     var selector = document.getElementById("table-selector");
-    var selectedTableId = selector.options[selector.selectedIndex].value;
-    var tables = document.querySelectorAll("#table-container table");
-    
+    var selectedValue = selector.value;
+
+    // Ocultar todos los elementos
+    var tables = document.querySelectorAll("#table-container > table, #table-container > .dolar-container");
     tables.forEach(function(table) {
-      if (table.id === selectedTableId) {
-        table.style.display = "table";
-      } else {
         table.style.display = "none";
-      }
     });
-  }
+
+    // Mostrar el elemento seleccionado
+    var selectedTable = document.getElementById(selectedValue);
+    if (selectedTable) {
+        selectedTable.style.display = "table"; // Mostrar la tabla
+    } else {
+        var dolarContainer = document.querySelector("#table-container > .dolar-container");
+        dolarContainer.style.display = "block"; // Mostrar el contenedor de dólar
+    }
+}

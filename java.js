@@ -1,21 +1,27 @@
-document.querySelector("#contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); 
-    enviar();
-});
 
-function enviar() {
-    var nombre = document.querySelector("#name").value;
-    Swal.fire({
-        title: "Mensaje enviado!",
-        text: nombre + ", en breve nuestro equipo se contactará",
-        icon: "success",
-        confirmButtonColor: "#941B0C",
-    }).then((result) => {
-        if (result.isConfirmed) {
-            document.getElementById("enviar").click(); 
-        }
+    document.querySelector("#contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evitar que el formulario se envíe automáticamente
+        enviar();
     });
-};
+
+    function enviar() {
+        var nombre = document.querySelector("#name").value;
+        Swal.fire({
+            title: "¿Estás seguro de enviar el formulario?",
+            text: nombre + ", en breve nuestro equipo se contactará",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#941B0C",
+            cancelButtonColor: "#3085d6",
+            confirmButtonText: "Sí, enviar formulario"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                document.getElementById("contactForm").submit();
+            }
+        });
+    };
+
+
 
 function mostrarInfo(info,tipoinfo) {
     Swal.fire({

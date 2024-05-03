@@ -19,8 +19,6 @@ function enviar() {
 }
 
 
-
-
 /****************** PopUPs Mas info */
 
 function mostrarInfo(info,tipoinfo) {

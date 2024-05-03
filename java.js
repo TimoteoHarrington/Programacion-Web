@@ -1,3 +1,4 @@
+/****************** PopUP Contacto */
 document.querySelector("#contactForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Evitar que se envíe el formulario por defecto
     enviar();
@@ -18,6 +19,10 @@ function enviar() {
 }
 
 
+
+
+/****************** PopUPs Mas info */
+
 function mostrarInfo(info,tipoinfo) {
     Swal.fire({
         title: info,
@@ -29,35 +34,7 @@ function mostrarInfo(info,tipoinfo) {
 }; 
 
 
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    fetch("https://dolarapi.com/v1/dolares")
-        .then(response => response.json())
-        .then(data => {
-            // Obtener el contenedor donde se mostrarán las cotizaciones
-            const cotizacionesContainer = document.getElementById("cotizaciones");
-
-            // Recorrer los datos de la API y construir el HTML para cada cotización
-            data.forEach(cotizacion => {
-                const cotizacionHTML = `
-                    <div>
-                        <h2>${cotizacion.nombre}</h2>
-                        <p><strong>Casa:</strong> ${cotizacion.casa}</p>
-                        <p><strong>Compra:</strong> ${cotizacion.compra}</p>
-                        <p><strong>Venta:</strong> ${cotizacion.venta}</p>
-                        <p><strong>Fecha de Actualización:</strong> ${cotizacion.fechaActualizacion}</p>
-                    </div>
-                `;
-                // Agregar el HTML de la cotización al contenedor
-                cotizacionesContainer.insertAdjacentHTML('beforeend', cotizacionHTML);
-            });
-        })
-        .catch(error => {
-            console.error('Error al obtener las cotizaciones:', error);
-        });
-});
-
+/****************** Google Maps */
 function iniciarMap(){
     var coord = {lat:-34.5992287 ,lng:-58.3863372 };
     var map = new google.maps.Map(document.getElementById('map'),{
@@ -71,6 +48,8 @@ function iniciarMap(){
 
 };
 
+
+/****************** Seleccionar tabla en Valores */
 
 const tableSelector = document.getElementById("table-selector");
 const tableContainer = document.getElementById("table-container");
@@ -89,3 +68,32 @@ tableSelector.addEventListener("change", () => {
   const selectedTableId = `table${selectedTable}`;
   const selectedTableElement = document.getElementById(selectedTableId);
   selectedTableElement.style })
+
+
+  const dropdownButton = document.getElementById('dropdown-button');
+  const dropdown = document.querySelector('.dropdown');
+  
+  dropdownButton.addEventListener('click', () => {
+    dropdown.classList.toggle('show');
+  });
+  
+  document.addEventListener('click', (e) => {
+    if (!dropdown.contains(e.target) &&!dropdownButton.contains(e.target)) {
+      dropdown.classList.remove('show');
+    }
+  });
+
+
+  function showTable() {
+    var selector = document.getElementById("table-selector");
+    var selectedTableId = selector.options[selector.selectedIndex].value;
+    var tables = document.querySelectorAll("#table-container table");
+    
+    tables.forEach(function(table) {
+      if (table.id === selectedTableId) {
+        table.style.display = "table";
+      } else {
+        table.style.display = "none";
+      }
+    });
+  }

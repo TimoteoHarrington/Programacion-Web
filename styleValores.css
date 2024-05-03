@@ -1,24 +1,56 @@
-#dolar-info{
-    padding-top: 80px;
-
-}
-
 #table-container {
     border: 1px solid #ccc;
     padding: 10px;
-    margin-top: 100px;
-  }
-  
-  table {
+    margin-top: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
-  }
-  
-  th, td {
+    height: 60vh;
+}
+
+th, td {
     padding: 5px;
     border: 1px solid #ccc;
-  }
-  
-  th {
+}
+
+th {
     background-color: #f2f2f2;
-  }
+}
+
+.selector{
+    
+
+    text-align: center;
+
+
+}
+#table-selector{ 
+    margin-top: 90px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    align-items: right;
+    justify-content: center;  
+    
+}
+
+tfoot{
+    font-size: 10px;
+    text-align: center;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+}
+

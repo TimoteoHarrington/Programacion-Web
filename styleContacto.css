@@ -18,7 +18,8 @@
 .form {
     display: flex;
     flex-direction: column;
-    padding: 20px
+    padding: 20px;
+    margin-top: 30px;
 }
 
 .form label {
@@ -46,7 +47,7 @@
 .info {
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin: 0;
     text-align: center;
 }
 
@@ -67,7 +68,7 @@ a{
 } 
 
 .form{
-    padding-top: 80px;
+    padding-top: 10px;
     padding-bottom: 60px;
 } 
 
@@ -83,7 +84,7 @@ a{
 
 @media (min-width:900px){  
     .form{
-        padding-top: 30px;
+        padding-top: 40px;
         padding-bottom: 20px;
     }  
 

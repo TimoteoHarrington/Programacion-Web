@@ -1,15 +1,18 @@
+/* Arreglos para desktop de la pagina principal, header y footer */
+
 @media (min-width:900px){ 
     
     header a{
         font-size: 19px;
         padding-right: 25px;
     }
+
     header .logo{
-        margin: 0 ;
-        padding: 0;
         width: 60px; 
         height: 60px;
+
     } 
+
     header .boton_header{
         font-size: 16px; 
         font-family: sans-serif;
@@ -21,6 +24,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
     #quienes-somos .image-container{
         background-image: url(imagenes/logo-2.png);
         background-size: cover;

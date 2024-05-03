@@ -1,6 +1,6 @@
 /****************** PopUP Contacto */
 document.querySelector("#contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evitar que se envíe el formulario por defecto
+    event.preventDefault(); // Evita que se envíe el formulario por defecto
     enviar();
 });
 
@@ -19,7 +19,7 @@ function enviar() {
 }
 
 
-/****************** PopUPs Mas info */
+/****************** PopUp's de más info */
 
 function mostrarInfo(info,tipoinfo) {
     Swal.fire({
@@ -32,7 +32,7 @@ function mostrarInfo(info,tipoinfo) {
 }; 
 
 
-/****************** Google Maps */
+/****************** Mapa con puntero */
 function iniciarMap(){
     var coord = {lat:-34.5992287 ,lng:-58.3863372 };
     var map = new google.maps.Map(document.getElementById('map'),{
@@ -47,7 +47,7 @@ function iniciarMap(){
 };
 
 
-/****************** Seleccionar tabla en Valores */
+/****************** Seleccionar tabla seleccionada en Valores */
 
 function showSelected() {
     var selector = document.getElementById("table-selector");
@@ -62,7 +62,7 @@ function showSelected() {
     // Mostrar el elemento seleccionado
     var selectedTable = document.getElementById(selectedValue);
     if (selectedTable) {
-        selectedTable.style.display = "table"; // Mostrar la tabla
+        selectedTable.style.display = "table"; // Mostrar la tabla seleccionada
     } else {
         var dolarContainer = document.querySelector("#table-container > .dolar-container");
         dolarContainer.style.display = "block"; // Mostrar el contenedor de dólar

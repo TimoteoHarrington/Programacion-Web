@@ -1,4 +1,5 @@
-document.querySelector("#contactForm").addEventListener("submit", function() {
+document.querySelector("#contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
     enviar();
 });
 
@@ -11,7 +12,7 @@ function enviar() {
         confirmButtonColor: "#941B0C",
     }).then((result) => {
         if (result.isConfirmed) {
-            document.getElementById("contactForm").submit(); 
+            document.getElementById("enviar").click(); 
         }
     });
 };

@@ -17,14 +17,14 @@
         <nav class="opciones"> 
             <a href="index.html#quienes-somos">Sobre nosotros</a> 
             <a href="index.html#nuestros-servicios">Servicios</a>
-            <a href="valores.html">Precios</a>
+            <a href="valores.html">Mercado</a>
             <a href="contacto.html"><button class="boton_header">Contacto</button></a>
         </nav>
         
     </header>  
 
-    <div class="contacto">
-        <form class="form" method="post" id="contactForm">
+    <div class="contacto" >
+        <form action="https://formsubmit.co/tharrington@itba.edu.ar" method="POST" class="form" id="contactForm" name="form-contacto">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
         
@@ -34,16 +34,21 @@
             <label for="message">Mensaje:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
             
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" id="enviar"> 
+
+            <input type="hidden" name="_next" value="https://programacion-web-weld.vercel.app/contacto.html">
+            <input type="hidden" name="_captcha" value="false">
+
         </form> 
-        
+       
         <div class="info">
             <h4><a href="https://www.instagram.com/harringtonylafuente/"><img src="imagenes/ig.png" alt="ig">@harrington&lafuente</h4></a>
             <h4><img src="imagenes/mail.png" alt="ig">harrington&lafuente@gmail.com</h4>
-            <h4><img src="imagenes/celular.png" alt="ig">+54 9 1112345678</h4>
-            <h4><img src="imagenes/oficina.png" alt="ig" >Oficina central: Av. Cordoba 1234</h4>
+            <h4><img src="imagenes/celu.png" alt="ig">+54 9 1112345678</h4>
+            <h4><img src="imagenes/local.png" alt="ig" >Oficina central: Av. Cordoba 1234</h4>
         </div>
     </div>
+    <div id="map"></div>
 
     <footer>
         <div class="container">
@@ -55,5 +60,6 @@
 <script src="sweetalert2.min.js"></script>
 <link rel="stylesheet" href="sweetalert2.min.css">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc6lzGWXbheEl4xw74yKSYcXkhpy770tQ&callback=iniciarMap"></script>
 </body> 
 </html>

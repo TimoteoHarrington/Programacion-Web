@@ -71,6 +71,15 @@ a{
     padding-bottom: 60px;
 } 
 
+
+#map{ 
+    height: 500px;
+    margin: 100px ;
+    margin-top: 10px;
+    align-items: center;
+}
+
+
 @media (min-width:900px){  
     .form{
         padding-top: 30px;

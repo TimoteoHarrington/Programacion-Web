@@ -6,6 +6,7 @@
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
     height: auto;
 }
 
@@ -15,6 +16,7 @@ table {
     align-items: space-between;
     height: 60vh;
 }
+
 tbody tr:nth-child(odd) {
     background-color: #f2f2f2; /* Color de fondo para filas impares de datos */
 }
@@ -69,8 +71,6 @@ tfoot{
     width: 280px;
     height: 220px;
     margin: 30px;
-    
-
 } 
 
 
@@ -81,13 +81,21 @@ footer {
     justify-content: center;
 }
 
-
-
+/* media para cuando se usa un dispositivo menor a 630 */
 @media (max-width:630px){ 
     #ultimo{
         margin-bottom: 130px;
     }
     .dolaritem{
         margin-left: 25px;
+    }
+    #table-selector{
+        margin-top: 70px;
+    }
+    #table1,#table2{
+        margin-left: -10px;
+    }
+    #table3{
+        margin-left: -30px;
     }
 }

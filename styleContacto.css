@@ -5,12 +5,10 @@
 
 .contacto {
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-    padding-top: 80px;
-    min-height: 95vh;
+    padding: 30px;
+    padding-top: 65px;
     flex: 1; 
 
 }
@@ -32,7 +30,7 @@
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
 }
 
 .form input[type="submit"] {
@@ -47,8 +45,9 @@
 .info {
     justify-content: center;
     align-items: center;
-    margin: 0;
+    
     text-align: center;
+
 }
 
 .info h4 {

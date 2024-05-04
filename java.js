@@ -68,3 +68,4 @@ function showSelected() {
         dolarContainer.style.display = "block"; // Mostrar el contenedor de dólar
     }
 }
+

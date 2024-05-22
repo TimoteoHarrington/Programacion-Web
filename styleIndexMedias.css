@@ -70,7 +70,6 @@
     } 
 
     .opciones{
-        
         position: fixed;
         display: none;
         visibility: hidden;
@@ -95,18 +94,15 @@
     .opcionesInd{
         flex-direction: column;
         align-items: end;
-        
     }
 
     .opcionesInd li a{
         text-decoration: none;
         color:#FFE8D1;
-        padding: 50px 10px; 
-        
     }
     
     .opcionesInd li{
-        margin: 10px;
+        margin: 20px;
         font-size: 25px;
     }
 }

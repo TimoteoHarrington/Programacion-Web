@@ -1,3 +1,27 @@
+/****************** HEADER hamburguesa */
+
+const opciones = document.querySelector('#opciones');
+const abrir = document.querySelector('#abrir');
+const cerrar = document.querySelector('#cerrar');
+
+abrir.addEventListener("click", () => {
+    opciones.classList.add('visible');
+});
+
+cerrar.addEventListener("click", () => {
+    opciones.classList.remove('visible');
+});
+
+//Cierre de menu al elegir una opcion.
+const opcionesLinks = document.querySelectorAll('.opcionesInd a[href^="#"]');
+
+opcionesLinks.forEach(menuLink => {
+    menuLink.addEventListener('click',() => {
+        opciones.classList.remove('visible');
+    })
+})
+
+
 /****************** PopUP Contacto */
 document.querySelector("#contactForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita que se envíe el formulario por defecto
@@ -68,4 +92,5 @@ function showSelected() {
         dolarContainer.style.display = "block"; // Mostrar el contenedor de dólar
     }
 }
+
 

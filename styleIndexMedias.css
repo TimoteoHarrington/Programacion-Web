@@ -1,25 +1,7 @@
-/* Arreglos para desktop de la pagina principal, header y footer */
+/* Arreglos para desktop de la pagina principal*/
 
 @media (min-width:900px){ 
-    
-    header a{
-        font-size: 19px;
-        padding-right: 25px;
-    }
-
-    header .logo{
-        width: 60px; 
-        height: 60px;
-
-    } 
-
-    header .boton_header{
-        font-size: 16px; 
-        font-family: sans-serif;
-        margin-right: auto;
-    
-    }
-
+  
     #quienes-somos .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -70,7 +52,61 @@
     #nuestros-servicios .carta button {
         display: none;
     }
-    
-    
 
+   
+}
+
+
+@media (max-width:750px){ 
+ 
+     .abrir-menu, 
+     .cerrar-menu{
+        display: block;
+        border: 0;
+        font-size: 3rem;
+        background-color: transparent;
+        color: brown;
+        
+    } 
+
+    .opciones{
+        
+        position: fixed;
+        display: none;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5) ; 
+        background-color:#1E1E24;
+        
+    }
+
+    .opciones.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .opcionesInd{
+        flex-direction: column;
+        align-items: end;
+        
+    }
+
+    .opcionesInd li a{
+        text-decoration: none;
+        color:#FFE8D1;
+        padding: 50px 10px; 
+        
+    }
+    
+    .opcionesInd li{
+        margin: 10px;
+        font-size: 25px;
+    }
 }

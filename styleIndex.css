@@ -11,11 +11,12 @@ p{font-size: 1.25em;}
 body{
     font-family: 'Montserrat';
     margin: 0; 
-
+    position: relative;
+    padding-bottom: 4em;
 } 
 
 button{
-    font-size: 1.1em;
+    font-size: 20px;
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 8px;
@@ -28,59 +29,55 @@ button:hover{
     background-color:rgb(106, 26, 26);
 } 
 
-header { 
+/*  HEADER */ 
+
+header{
     position: fixed;
-    background-color:#1E1E24; 
-    display: flex;
     width: 100%;
-} 
-
-header .container{ 
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    padding: 5px;
-
-}
-
-header .logo{
-    height: 40px;
-    width: 40px;
-} 
-
-header nav{
     display: flex;
-    align-items:center;
-    justify-content: right;
-    width: 80%;
+    align-items:center ;
+    background-color: #1E1E24;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 10vh;
+    
+}
 
+.logo  {
+    height: 80px;
+    width: 80px;
+    margin-left: 12px;
+    padding: 5px;
+}
+
+.opcionesInd{
+    list-style-type: none;
+    display: flex; 
+    align-items: center;
 } 
 
-header a{ 
-    padding: 0px 8px;
+
+.opcionesInd li a{
     text-decoration: none;
-    font-weight: bold; 
-    text-align: center;
-    color: #FFE8D1;
-    font-size: 11px; 
-    font-family: sans-serif;
+    color:#FFE8D1;
+    padding: 20px 15px; 
+}
+
+.opcionesInd li a:hover {
+    color: #941B0C; /* Cambia el color al pasar el cursor por encima */
+}
+
+
+.abrir-menu ,
+.cerrar-menu{
+    display: none;
 
 } 
 
-header .boton_header{
-    font-size: 13px; 
-    font-family: sans-serif;
-    margin-right: auto;
-
-}
-
-.boton_header:hover{
-    color: #FFE8D1
-}
-
-header :hover{
-    color:#941B0C
-} 
+/*  TERMINO EL HEADER*/
 
 #hero {
     display: flex;
@@ -102,7 +99,7 @@ header :hover{
 
 #quienes-somos .container{
     text-align: center ;
-    padding: 50px 12px;
+    padding: 60px 12px;
     background-color: #1E1E24;
     color: #FFE8D1;
 }
@@ -128,6 +125,7 @@ header :hover{
 
 #nuestros-servicios p{
     display: none;
+    text-align: center;
 }
 
 #nuestros-servicios h2{
@@ -145,25 +143,24 @@ header :hover{
 } 
 
 footer {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     color: #FFFFFF;
     background-color: #60606d;
-    padding: auto;
-    margin: 0;
-    height: auto;
-
+    width: 100%;
+    z-index: -1;
+    
 }
 
 footer p{
-   
-   margin-top: auto;
    font-size: 15px;
 }
 
 footer .container{
     height: auto;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    padding: 10px 10px;
+    padding: 1em 0;
  } 
+

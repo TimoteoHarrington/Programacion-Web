@@ -4,24 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harrington & Lafuente</title> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" href="imagenes/logo-1-64px.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleDesktop.css">
+    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="stylesheet" href="styleIndexMedias.css">
+    
 </head>
 <body>
     <header> 
-        <div class="container"> 
-            <a href="#hero"><img class="logo" src="imagenes/logo.svg" ></img></a>
+        <div class="logo">
+            <a href="index.html#hero">
+                <img src="imagenes/logo.svg" alt="Logo de la empresa">
+            </a>
         </div>
-        <nav class="opciones"> 
-            <a href="#quienes-somos">Sobre nosotros</a> 
-            <a href="#nuestros-servicios">Servicios</a>
-            <a href="indexMercado.html">Mercado</a>
-            <a href="indexContacto.html"><button class="boton_header">Contacto</button></a>
+        <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button> 
+        <nav class="opciones" id="opciones"> 
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-circle"></i></i></button>
+            <ul class="opcionesInd">
+                <li><a href="#quienes-somos">Sobre nosotros</a></li>
+                <li><a href="#nuestros-servicios">Servicios</a></li>
+                <li><a href="indexMercado.html">Mercado</a></li>
+                <li><a href="indexContacto.html"><button class="boton_header">Contacto</button></a></li>
+            </ul>
         </nav>
-        
-    </header> 
-
+    </header>
+    
+    
     <section id="hero"> 
         <h1>Harrington & La Fuente S.A. <br>Consignataria de Hacienda</h1>
         <a href="indexContacto.html"> <button>CONTACTO</button></a>
@@ -49,22 +57,22 @@
             <div class="target" >
                 <div class="carta">
                     <h3>COMERCIALIZACIÓN DE HACIENDA VACUNA <br> (AL MAG)</h3>
-                    <p id="infoComer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure dolores perspiciatis, tempora minima quam nemo, officia vero maxime consequatur sed, dignissimos atque! Odit provident odio, consequatur dicta similique porro.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit velit esse voluptatem debitis est vero vitae consectetur quaerat? Alias aspernatur quia delectus enim earum pariatur aut impedit. Amet, aspernatur.</p>
+                    <p id="infoComer">Nos especializamos en la comercialización de hacienda vacuna en el Mercado Agroganadero de Cañuelas (MAG), brindando a nuestros clientes una plataforma confiable y eficiente para la compra y venta de sus animales. Con un profundo conocimiento del mercado y una red de contactos sólida, facilitamos transacciones que satisfacen las necesidades tanto de productores como de compradores, asegurando un proceso transparente y justo para ambas partes.</p>
                     <button onclick="mostrarInfo('Comercialización de hacienda vacuna',document.getElementById('infoComer').textContent) ">+Info</button>
                 </div>
                 <div class="carta">
                     <h3>VENTAS DIRECTAS PARA CONSUMO Y EXPORTACIÓN</h3>
-                    <p id="infoVentas">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta explicabo voluptatum fugiat atque expedita porro velit assumenda placeat provident. Iusto repudiandae, odit voluptatem voluptate voluptatibus laboriosam excepturi totam vel qui!Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolorum praesentium maxime rerum quaerat voluptatibus fugiat. Delectus sint, sed quam numquam harum autem pariatur. Facilis qui at ea nostrum labore.</p>
+                    <p id="infoVentas">Además de ofrecer servicios en el MAG, también gestionamos ventas directas tanto para consumo interno como para exportación. Con un enfoque en la calidad del ganado y las necesidades específicas del mercado, conectamos a productores con compradores que buscan carne de primera calidad, garantizando la trazabilidad y el cumplimiento de los estándares internacionales de calidad.</p>
                     <button onclick="mostrarInfo('Ventas directas para consumo y exportación',document.getElementById('infoVentas').textContent)">+Info</button>
                 </div>
                 <div class="carta">
                     <h3>NEGOCIOS DE INVERNADA, CRÍA Y REPRODUCTORES EN FORMA PARTICULAR, REMATES Y FERIAS</h3>
-                    <p id="infoNegocios">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quasi nihil excepturi odio minus culpa provident neque suscipit quidem, dignissimos deserunt odit animi laborum veniam deleniti ut laboriosam labore libero?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti corporis ratione, minima eum provident placeat culpa, porro asperiores necessitatibus aspernatur omnis possimus recusandae? Odit sed exercitationem quaerat ratione fugit fuga!</p>
+                    <p id="infoNegocios">Para aquellos interesados en negocios de invernada, cría y reproducción, así como en participar en remates y ferias especializadas, nuestra consignataria ofrece un servicio integral. Desde la selección de animales de alto potencial genético hasta la organización y promoción de eventos, brindamos asesoramiento experto y apoyo logístico para garantizar el éxito de cada transacción. Ya sea que busque expandir su ganadería o adquirir ejemplares de calidad, estamos aquí para ayudarlo a alcanzar sus objetivos.</p>
                     <button onclick="mostrarInfo('Negocios de invernada, cría y reproductores',document.getElementById('infoNegocios').textContent)">+Info</button>
                 </div>
                 <div class="carta">
                     <h3>COMPRA Y VENTA DE CAMPOS</h3>
-                    <p id="infoCampos"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore minus error sint quisquam, commodi voluptates esse quod optio vitae molestiae repellat harum corporis architecto numquam, eius, magnam fugit eaque suscipit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cumque repudiandae atque temporibus quas beatae debitis aliquid sint facere doloribus minima, quis inventore, ullam nulla omnis incidunt consectetur repellendus repellat?</p>
+                    <p id="infoCampos">Facilitamos la compra y venta de campos para aquellos que deseen expandir o reubicar sus operaciones ganaderas. Con un profundo conocimiento del mercado inmobiliario rural y una vasta red de contactos, asistimos a nuestros clientes en cada etapa del proceso, desde la evaluación y la búsqueda de propiedades hasta la negociación y el cierre de la transacción. Ya sea que esté buscando invertir en nuevas tierras o vender una propiedad existente, podemos ayudarlo a maximizar el valor de su inversión.</p>
                     <button onclick="mostrarInfo('Compra y venta de campos',document.getElementById('infoCampos').textContent)">+Info</button>
                 </div>
             </div>

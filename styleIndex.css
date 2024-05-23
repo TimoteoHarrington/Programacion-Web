@@ -16,15 +16,20 @@ body{
 } 
 
 button{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 8px;
+    padding: 15px 20px;
+    border-radius: 60px;
     color: #FFE8D1;
     background-color: #941B0C;
     cursor: pointer;
 } 
 
+
+.boton_header{
+    font-size: 20px;
+    padding: 10px 20px;
+}
 button:hover{
     background-color:rgb(106, 26, 26);
 } 
@@ -63,7 +68,7 @@ header{
 .opcionesInd li a{
     text-decoration: none;
     color:#FFE8D1;
-    padding: 20px 15px; 
+    padding: 20px 10px; 
 }
 
 .opcionesInd li a:hover {

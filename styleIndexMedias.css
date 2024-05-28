@@ -2,6 +2,10 @@
 
 @media (min-width:900px){ 
   
+    #hero{ 
+        height: 96vh;
+    }
+
     #quienes-somos .container{
         display: grid;
         grid-template-columns: 1fr 1fr;

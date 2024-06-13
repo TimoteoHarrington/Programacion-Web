@@ -1,7 +1,11 @@
 /* Arreglos para desktop de la pagina principal*/
 
 @media (min-width:900px){ 
-  
+    .logo{ 
+        margin-left: 10px;
+        width: 100px;
+    }
+
     #hero{ 
         height: 96vh;
     }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora / Harrington & Lafuente</title> 
+    <link rel="icon" href="imagenes/logo-1-64px.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="stylesheet" href="styleIndexMedias.css">
+    <link rel="stylesheet" href="styleCalculadora.css">
+</head>
+<body>
+    <header> 
+        <div class="logo">
+            <a href="index.html#hero">
+                <img src="imagenes/logo.svg" alt="Logo de la empresa">
+            </a>
+        </div>
+        <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button> 
+        <nav class="opciones" id="opciones"> 
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-circle"></i></i></button>
+            <ul class="opcionesInd">
+                <li><a href="#quienes-somos">Sobre nosotros</a></li>
+                <li><a href="#nuestros-servicios">Servicios</a></li>
+                <li><a href="indexMercado.html">Mercado</a></li>
+                <li><a href="indexCalculadora.html"><i class="bi bi-calculator"></i></a></li>
+                <li><a href="indexContacto.html"><button class="boton_header">Contacto</button></a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="calculadora">
+        <h2>Calcula el valor de tu hacienda</h2>
+        <div class="selector">
+            <select id="selector-calculadora">
+                <option value="">Seleccione una opción</option>
+                <option value="faena">FAENA</option>
+                <option value="invernada">INVERNADA</option>
+            </select>
+        </div>
+        <div id="campos-faena" class="grupo-input" style="display: none;">
+            <label for="categoria-faena">Categoría:</label>
+            <select id="categoria-faena">
+                <option value="2100">Novillitos (290kg - 340kg) - $2100/kg</option>
+                <option value="2050">Novillo liviano (340kg - 390kg) - $2050/kg</option>
+                <option value="1950">Novillo Mediano (390kg - 450kg) - $1950/kg</option>
+                <option value="1900">Novillo pesado (+ 450kg) - $1900/kg</option>
+                <option value="2050">Vaquillona liviana (280kg - 310kg) - $2050/kg</option>
+                <option value="1950">Vaquillona mediana (310kg - 360kg) - $1950/kg</option>
+                <option value="1800">Vaquillona pesada (360kg - 430kg) - $1800/kg</option>
+                <option value="1400">Vaca consumo - $1400/kg</option>
+                <option value="1200">Vaca carniceria - $1200/kg</option>
+                <option value="900">Vaca conserva/manufactura - $900/kg</option>
+                <option value="1300">Toros buenos - $1300/kg</option>
+            </select>
+            <label for="kilos-faena">Kilos por animal:</label>
+            <input type="number" id="kilos-faena" min="0">
+            <label for="cantidad-de-animales-faena">Cantidad de animales:</label>
+            <input type="number" id="cantidad-de-animales-faena" min="0">
+        </div>
+        <div id="campos-invernada" class="grupo-input" style="display: none;">
+            <label for="categoria-invernada">Categoría:</label>
+            <select id="categoria-invernada">
+                <option value="2300">Terneros hasta 160kg - $2300/kg</option>
+                <option value="2100">Terneros (160kg - 180kg) - $2100/kg</option>
+                <option value="2050">Terneros (190kg - 200kg) - $2050/kg</option>
+                <option value="2000">Terneros (210 kg - 220kg) - $2000/kg</option>
+                <option value="1900">Novillitos (230kg - 270kg) - $1900/kg</option>
+                <option value="1800">Novillitos (270kg - 330kg) - $1800/kg</option>
+                <option value="1800">Terneras (150kg - 160kg) - $1800/kg</option>
+                <option value="1700">Terneras (170kg - 200kg) - $1700/kg</option>
+                <option value="1650">Terneras (200kg - 230kg) - $1650/kg</option>
+                <option value="1550">Vaquillonas (230kg - 270kg) - $1550/kg</option>
+                <option value="1450">Vaquillonas (270kg - 330kg) - $1450/kg</option>
+                <option value="900">Vaca de invernada - $900/kg</option>
+            </select>
+            <label for="kilos-invernada">Kilos por animal:</label>
+            <input type="number" id="kilos-invernada" min="0">
+            <label for="cantidad-de-animales-invernada">Cantidad de animales:</label>
+            <input type="number" id="cantidad-de-animales-invernada" min="0">
+        </div>
+        <button id="boton-calcular">Calcular</button>
+        <div id="resultado"></div>
+        <div id="resultadoUnit"></div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>©Harrington & Lafuente. Consignataria de Hacienda</p>
+        </div>
+    </footer> 
+    <script src="java.js"></script>
+    <script src="calculadora.js"></script>
+</body>
+</html>

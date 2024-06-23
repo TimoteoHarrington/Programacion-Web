@@ -23,27 +23,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     botonCalcular.addEventListener('click', function() {
-        let cantidadAnimalesInput, cantidadAnimales, valorCategoria, valorKilos, valorTotal, valorUnitario;
+        let cantidadAnimales, valorCategoria, valorKilos, valorTotal, valorUnitario;
 
         if (selectorCalculadora.value === 'faena') {
-            cantidadAnimalesInput = document.getElementById('cantidad-de-animales-faena').value.trim();
-            cantidadAnimales = parseFloat(cantidadAnimalesInput);
+            cantidadAnimales = parseFloat(document.getElementById('cantidad-de-animales-faena').value);
             valorCategoria = parseFloat(document.getElementById('categoria-faena').value);
             valorKilos = parseFloat(document.getElementById('kilos-faena').value);
         } else if (selectorCalculadora.value === 'invernada') {
-            cantidadAnimalesInput = document.getElementById('cantidad-de-animales-invernada').value.trim();
-            cantidadAnimales = parseFloat(cantidadAnimalesInput);
+            cantidadAnimales = parseFloat(document.getElementById('cantidad-de-animales-invernada').value);
             valorCategoria = parseFloat(document.getElementById('categoria-invernada').value);
             valorKilos = parseFloat(document.getElementById('kilos-invernada').value);
         }
 
-        if (isNaN(cantidadAnimales) || cantidadAnimales <= 0 || cantidadAnimalesInput === '') {
+        if (isNaN(cantidadAnimales) || cantidadAnimales <= 0) {
             divResultado.textContent = 'Por favor, ingrese una cantidad válida de animales.';
+            divResultadoUnit.textContent = '';
             return;
         }
 
         if (isNaN(valorKilos) || valorKilos <= 0) {
             divResultado.textContent = 'Por favor, ingrese un valor válido de kilos.';
+            divResultadoUnit.textContent = '';
             return;
         }
 

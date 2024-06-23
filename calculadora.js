@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         valorTotal = valorCategoria * valorKilos * cantidadAnimales;
         valorUnitario =  valorCategoria * valorKilos;
 
-        divResultado.textContent = 'El valor aproximado total de la jaula es: $' + valorTotal.toFixed(2);
-        divResultadoUnit.textContent = 'El valor aproximado por animal es: $' + valorUnitario.toFixed(2);
+        divResultado.textContent = 'Valor aproximado total jaula: $' + valorTotal.toFixed(2);
+        divResultadoUnit.textContent = 'Valor aproximado por animal: $' + valorUnitario.toFixed(2);
     });
 });
